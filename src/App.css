@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: lightblue;
+  height: 100vh;
+  max-width: 600px;
+  margin: auto;
+}
+.main-area {
+  gap: 1em;
+  background-color: lightcoral;
+  display: flex;
+  flex-grow: 1;
+  height: calc(100vh - 170px);
+}
+
+.input-area {
+  background-color: lightpink;
+  display: flex;
+  height: 80px;
+}
+.text-input {
+  flex-grow: 1;
+}
+
+.text-msg {
+  background-color: gray;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 7px;
+  border: 3px solid darkgray;
+}
+.text-msgs {
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+  align-items: flex-start;
+  flex-grow: 1;
+  overflow: auto;
+}
+
+.own-msg {
+  align-self: flex-end;
+}
+
+.header {
+  background-color: lightgreen;
+  height: 60px;
+}
+
+.footer {
+  height: 30px;
+  background-color: lightgreen;
+}
+
+textarea {
+  resize: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .users {
+    display: none;
+  }
+}
+
+/* nekako sam uspio sa flexboxom sve posložoiti  */
+/* nadalje treba malo urediti i namistiti razmake ili nešto viditi ćemo */
