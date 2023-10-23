@@ -9,30 +9,34 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  background-color: lightblue;
   height: 100vh;
   max-width: 600px;
   margin: auto;
 }
 .main-area {
   gap: 1em;
-  background-color: lightcoral;
+  border: 2px solid black;
   display: flex;
   flex-grow: 1;
   height: calc(100vh - 170px);
 }
 
 .input-area {
-  background-color: lightpink;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
   display: flex;
   height: 80px;
+}
+.users {
+  margin: 5px;
 }
 .text-input {
   flex-grow: 1;
 }
 
 .text-msg {
-  background-color: gray;
+  /* background-color: gray; */
   padding: 10px;
   margin: 10px;
   border-radius: 7px;
@@ -41,7 +45,7 @@
 .text-msgs {
   display: flex;
   flex-direction: column;
-  background-color: red;
+  border-left: 2px solid black;
   align-items: flex-start;
   flex-grow: 1;
   overflow: auto;
@@ -52,17 +56,21 @@
 }
 
 .header {
-  background-color: lightgreen;
+  /* border: 2px solid black; */
   height: 60px;
 }
 
 .footer {
   height: 30px;
-  background-color: lightgreen;
+  /* border: 2px solid black; */
 }
 
 textarea {
   resize: none;
+}
+
+.btn {
+  padding: 0 10px;
 }
 
 @media only screen and (max-width: 600px) {
